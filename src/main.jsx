@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import Home from './components/Home'
-import Custompaid from './components/Custompaid'
-import Survey from './components/Survey'
-import Forbidden from './components/Forbidden'
+import Home from './pages/Home'
+import Custompaid from './pages/Custompaid'
+import Survey from './pages/Survey'
+import Forbidden from './pages/Forbidden'
 
 const router = createBrowserRouter ([
   {

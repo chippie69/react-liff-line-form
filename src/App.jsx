@@ -1,8 +1,8 @@
 import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./components/Home"
-import Custompaid from "./components/Custompaid"
-import Survey from "./components/Survey"
+import Home from "./pages/Home"
+import Custompaid from "./pages/Custompaid"
+import Survey from "./pages/Survey"
 
 function App() {
   return (
