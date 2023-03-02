@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;  
+}
+
+.body {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ebebeb;
+}
+
+.container {
+  width: 450px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 5rem;
+  padding: 1rem;
+}
+
+.geeting-text {
+  padding: 1rem;
+}
+
+.user-profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.title-form {
+  padding-top: 10px;
+  text-align: center;
+}
+
+h1,
+h6 {
+  text-align: center;
+  margin: 14px;
+}
+
+p {
+  text-align: center;
+}
+
+.idcard-button {
+  color: #ff6b00;
+}
+.idcard-input {
+  padding: 2px;
+  width: 100%;
+}
+
+.phone-button {
+  color: #ff6b00;
+}
+.phone-input {
+  padding: 2px;
+  width: 100%;
+}
+
+.custom-icon {
+  color: #ff6b00;
+}
+.custom-input {
+  padding: 2px;
+  width: 100%;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 1em;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+.btn-primary:hover {
+  background-color: rgb(190, 50, 0);
+  border-color: rgb(190, 50, 0);
+}
+
+.pdpa-link {
+  padding: 4px;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* MODAL */
+.modal-header {
+  border-bottom: none;
+}
+.modal-body {
+  padding-bottom: 0;
+}
+.modal-footer {
+  border-top: none;
+  padding-top: 0;
+}
+.row-success {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-3-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #E4F5F0;
+  border-radius: 50%;
+}
+.img-in-col-3-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(66, 186, 150);
+}
+
+.row-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-3-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #FAE5E7;
+  border-radius: 50%;
+}
+.img-in-col-3-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(233, 71, 89);
+}
+
+.forbidden-logo {
+  text-align: center;
+  padding: 20px;
+}
