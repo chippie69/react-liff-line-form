@@ -10,10 +10,8 @@ const liff = window.liff;
 
 const Survey = () => {
   const [showModalTimeExpired, setShowModalTimeExpired] = useState(false);
-  const [showModalUpdateSurveysuccess, setShowModalUpdateSurveysuccess] =
-    useState(false);
-  const [showModalUpdateSurveyFail, setShowModalUpdateSurveyFail] =
-    useState(false);
+  const [showModalUpdateSurveysuccess, setShowModalUpdateSurveysuccess] = useState(false);
+  const [showModalUpdateSurveyFail, setShowModalUpdateSurveyFail] = useState(false);
 
   const handleCloseShowModalTimeExpired = () => liff.closeWindow();
   const handleCloseShowModalUpdateSurveysuccess = async () => {
@@ -21,14 +19,11 @@ const Survey = () => {
     await liff.sendMessages(msg);
     await liff.closeWindow();
   };
-  const handleCloseShowModalUpdateSurveyFail = () =>
-    setShowModalUpdateSurveyFail(false);
+  const handleCloseShowModalUpdateSurveyFail = () => setShowModalUpdateSurveyFail(false);
 
   const handleShowModalTimeExpired = () => setShowModalTimeExpired(true);
-  const handleShowModalUpdateSurveysuccess = () =>
-    setShowModalUpdateSurveysuccess(true);
-  const handleShowModalUpdateSurveyFail = () =>
-    setShowModalUpdateSurveyFail(true);
+  const handleShowModalUpdateSurveysuccess = () => setShowModalUpdateSurveysuccess(true);
+  const handleShowModalUpdateSurveyFail = () => setShowModalUpdateSurveyFail(true);
 
   const date = new Date();
   const currentTimestamp = date.getTime();
@@ -111,9 +106,13 @@ const Survey = () => {
     axios(config)
       .then((res) => {
         if (res.status === 200) {
+
           handleShowModalUpdateSurveysuccess();
+
         } else {
+          
           handleShowModalUpdateSurveyFail();
+
         }
       })
       .catch((err) => console.error(err));

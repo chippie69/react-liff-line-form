@@ -10,18 +10,14 @@ const liff = window.liff;
 const Home = () => {
   const [showModalIdcardNotFound, setShowModalIdcardNotFound] = useState(false); // ไม่พบบัตรประชาชน
   const [showModalEmptyForm, setShowModalEmptyForm] = useState(false); // ฟอร์มว่าง
-  const [showModalRegisterSuccess, setShowModalRegisterSuccess] =
-    useState(false); // สมัครสำเร็จ
+  const [showModalRegisterSuccess, setShowModalRegisterSuccess] = useState(false); // สมัครสำเร็จ
   const [showModalSystemError, setShowModalSystemError] = useState(false); // ระบบผิดพลาด
   const [showModalDataNotFound, setShowModalDataNotFound] = useState(false); // ไม่พบข้อมูล
   const [showModalDuplicateUser, setShowModalDuplicateUser] = useState(false); // ผู้ใช้ซ้ำ
-  const [showModalDuplicateIdcard, setShowModalDuplicateIdcard] =
-    useState(false); // บัตรประชาชนซ้ำ
-  const [showModalAlreadyRegister, setShowModalAlreadyRegister] =
-    useState(false); // ลงทะเบียนแล้ว
+  const [showModalDuplicateIdcard, setShowModalDuplicateIdcard] = useState(false); // บัตรประชาชนซ้ำ
+  const [showModalAlreadyRegister, setShowModalAlreadyRegister] = useState(false); // ลงทะเบียนแล้ว
 
-  const handleCloseShowModalIdcardNotFound = () =>
-    setShowModalIdcardNotFound(false);
+  const handleCloseShowModalIdcardNotFound = () => setShowModalIdcardNotFound(false);
   const handleCloseShowModalEmptyForm = () => setShowModalEmptyForm(false);
   const handleCloseShowModalRegisterSuccess = async () => {
     const msg = [{ type: "text", text: "ตรวจสอบค่างวด" }];
@@ -29,23 +25,19 @@ const Home = () => {
     await liff.closeWindow();
   };
   const handleCloseShowModalSystemError = () => liff.closeWindow();
-  const handleCloseShowModalDataNotFound = () =>
-    setShowModalDataNotFound(false);
+  const handleCloseShowModalDataNotFound = () => setShowModalDataNotFound(false);
   const handleCloseShowModalDuplicateUser = () => liff.closeWindow();
   const handleCloseShowModalDuplicateIdcard = () => liff.closeWindow();
   const handleCloseShowModalAlreadyRegister = () => liff.closeWindow();
 
   const handleShowModalIdcardNotFound = () => setShowModalIdcardNotFound(true);
   const handleShowModalEmptyForm = () => setShowModalEmptyForm(true);
-  const handleShowModalRegisterSuccess = () =>
-    setShowModalRegisterSuccess(true);
+  const handleShowModalRegisterSuccess = () => setShowModalRegisterSuccess(true);
   const handleShowModalSystemError = () => setShowModalSystemError(true);
   const handleShowModalDataNotFound = () => setShowModalDataNotFound(true);
   const handleShowModalDuplicateUser = () => setShowModalDuplicateUser(true);
-  const handleShowModalDuplicateIdcard = () =>
-    setShowModalDuplicateIdcard(true);
-  const handleShowModalAlreadyRegister = () =>
-    setShowModalAlreadyRegister(true);
+  const handleShowModalDuplicateIdcard = () => setShowModalDuplicateIdcard(true);
+  const handleShowModalAlreadyRegister = () => setShowModalAlreadyRegister(true);
 
   const [loading, setLoading] = useState(false);
 
