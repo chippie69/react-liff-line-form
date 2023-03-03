@@ -97,7 +97,6 @@ const Custompaid = () => {
       console.log("incorrectsyntax");
 
     } else {
-      
       console.log("gen");
 
       let amountFormat = new Intl.NumberFormat("th-Th", {
